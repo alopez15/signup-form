@@ -36,7 +36,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 10%;
+  
   background-color: RGBA(0, 0, 0, 0.4);
   padding: 0.5rem;
   margin-top: 9rem;
@@ -50,7 +50,8 @@ header {
 
 #header-container img {
   width: 15%;
-  height: 13%;
+  min-width: 35px;
+  min-height: 20%;
 }
 
 cite {
@@ -68,9 +69,11 @@ cite {
 .container > div:nth-of-type(1) {
   min-width: 25%;
   position: relative;
+  flex-shrink: 2;
 }
 .container > div:nth-of-type(2) {
   width: 70%;
+  flex-shrink: 1;
 }
 
 #form-container > div:nth-of-type(2) {
@@ -128,25 +131,25 @@ h2 {
 
 input[type] {
   max-height: 20px;
-  width: 200px;
-  border: solid #E5E7EB;
+  width: 100%;
+  border: solid #e5e7eb;
   border-radius: 5px;
   border-width: 2px;
 }
 
-input:focus{
-    outline: none;
-    border: solid rgb(4, 173, 230);
-    box-shadow: 1px 1px rgb(153, 153, 153);
+input:focus {
+  outline: none;
+  border: solid rgb(4, 173, 230);
+  box-shadow: 1px 1px rgb(153, 153, 153);
 }
 
-input[type]:invalid{
-    border-color: rgb(244, 153, 153);
+input[type]:invalid {
+  border-color: rgb(244, 153, 153);
 }
 
-label{
-    font-family: "Akshar", sans-serif;
-    font-size: .8rem;
+label {
+  font-family: "Akshar", sans-serif;
+  font-size: 0.8rem;
 }
 
 #form-style {
@@ -162,31 +165,29 @@ label{
   flex-direction: column;
   gap: 0.5rem;
   margin: 0 1.5rem;
-  
 }
 
-form button{
-    border: solid #596D48;
-    background-color: #596D48;
-    border-radius: 5px;
-    height: 40px;
-    width: 200px;
-    color: white;
-    font-weight: bold;
-    box-shadow: 3px 3px rgb(208, 208, 208);
+form button {
+  border: solid #596d48;
+  background-color: #596d48;
+  border-radius: 5px;
+  height: 2rem;
+  width: 10rem;
+  color: white;
+  font-weight: bold;
+  box-shadow: 3px 3px rgb(208, 208, 208);
 }
 
-form p{
-    margin: 1rem 0 1rem;
-    font-family: "Akshar", sans-serif;
-
+form p {
+  margin: 1rem 0 1rem;
+  font-family: "Akshar", sans-serif;
 }
 
-form>div:nth-of-type(2){
-    margin: 2.5rem;
+form > div:nth-of-type(2) {
+  margin: 2.5rem;
 }
 
-#login-span{
-    color: #596D48;
-    font-family: "Akshar", sans-serif;
+#login-span {
+  color: #596d48;
+  font-family: "Akshar", sans-serif;
 }
